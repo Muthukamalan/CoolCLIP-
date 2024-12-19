@@ -44,7 +44,8 @@ tokenizer( list(captions), padding=True, truncation=True, max_length=200 )
 text_model = .model = DistilBertModel.from_pretrained("distilbert-base-uncased")
 ```
 
-<div align='center'><img src='./contents/bert-model.png' alt=""></div>
+<!-- <div align='center'><img src='./contents/bert-model.png' alt=""></div> -->
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/bert-model.png' alt=""></div>
 
 
 ## Image Encoder
@@ -71,7 +72,7 @@ pretrained `resnet` model
 ```python
 image_model = timm.create_model( 'resnet18', pretrained, num_classes=0, global_pool="avg" )
 ```
-<div align='center'><img src='./contents/resnet.png' alt=""></div>
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/resnet.png' alt=""></div>
 
 
 ## Projection Head
@@ -153,15 +154,19 @@ class CLIPModel(pl.LightningModule):
 
 ## Training
 - nvitop
-![cool-clip-nvitop](./contents/cool-clip-nvitop.png)
+<!-- ![cool-clip-nvitop](./contents/cool-clip-nvitop.png) -->
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/cool-clip-nvitop.png' alt=""></div>
+
 - htop
-![cool-clip](./contents/cool-clip.png)
+<!-- ![cool-clip](./contents/cool-clip.png) -->
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/cool-clip.png' alt=""></div>
+
 - training
-![fit-report](./contents/fit-report.png)
-
-
+<!-- ![fit-report](./contents/fit-report.png) -->
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/fit-report.png' alt=""></div>
 
 
 # Inference
 ## GRADIO APP
-<div><img align='center' src="./contents/clip_model.png" ></img></div>
+<div align='center'><img src='https://raw.githubusercontent.com/Muthukamalan/CoolCLIP-/refs/heads/main/gradio/contents/clip_model.png' alt=""></div>
+<!-- <div><img align='center' src="./contents/clip_model.png" ></img></div> -->
